@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hacer que el sitio sea responsive -->
+    <title>Hello Kitty & Friends Blog</title> <!-- Título de la página -->
+
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hello Kitty & Friends</a> <!-- Enlace al inicio -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#heroCarousel">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#personajes">Personajes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#newsletter">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/fondo1.jpg" class="d-block w-100" alt="Hello Kitty">
+                <div class="carousel-caption">
+                    <h1>Bienvenidos al mundo de Hello Kitty</h1>
+                    <p>Descubre las últimas aventuras de Hello Kitty y sus amigos</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- Sección de tarjetas -->
+    <div id="personajes" class="container my-5">
+        <div class="row g-4">
+            <!-- Tarjeta Hello Kitty -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/assets/HelloKitty.jpg" class="card-img-top" alt="Hello Kitty">
+                    <div class="card-body">
+                        <h5 class="card-title">Hello Kitty</h5>
+                        <p class="card-text">Conoce todo sobre nuestra adorable gatita y sus aventuras en Londres.</p>
+                        <a href="#" class="btn btn-custom" data-bs-toggle="collapse" data-bs-target="#moreInfoHelloKitty">Leer más</a>
+                        <div id="moreInfoHelloKitty" class="collapse mt-3">
+                            <p>Hello Kitty es una gatita blanca con un lazo rojo en su oreja izquierda. Vive en Londres con su familia y amigos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta My Melody -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/assets/MyMelody.webp" class="card-img-top" alt="My Melody">
+                    <div class="card-body">
+                        <h5 class="card-title">My Melody</h5>
+                        <p class="card-text">Descubre las dulces historias de My Melody y su capucha roja.</p>
+                        <a href="#" class="btn btn-custom" data-bs-toggle="collapse" data-bs-target="#moreInfoMyMelody">Leer más</a>
+                        <div id="moreInfoMyMelody" class="collapse mt-3">
+                            <p>My Melody es una conejita blanca que siempre lleva una capucha roja. Es muy dulce y amigable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta Cinnamoroll -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/assets/Cinnamorrol.png" class="card-img-top" alt="Cinnamoroll">
+                    <div class="card-body">
+                        <h5 class="card-title">Cinnamoroll</h5>
+                        <p class="card-text">Sigue las aventuras del adorable perrito que puede volar usando sus largas orejas.</p>
+                        <a href="#" class="btn btn-custom" data-bs-toggle="collapse" data-bs-target="#moreInfoCinnamoroll">Leer más</a>
+                        <div id="moreInfoCinnamoroll" class="collapse mt-3">
+                            <p>Cinnamoroll es un cachorro blanco con orejas largas que le permiten volar. Vive en una cafetería y es muy amigable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de suscripción al newsletter -->
+    <div id="newsletter" class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h3>¡Suscríbete a nuestro newsletter!</h3>
+                    <p>Recibe las últimas novedades de Hello Kitty y sus amigos</p>
+                    <form class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Tu email">
+                        <button class="btn btn-custom" type="submit">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer con acordeón -->
+    <footer id="contacto" class="py-4">
+        <div class="container">
+            <div class="accordion" id="footerAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Sobre Nosotros
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                            Blog dedicado a compartir el mundo kawaii de Hello Kitty y sus amigos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2025 Hello Kitty & Friends Blog</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap y JavaScript personalizado -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
