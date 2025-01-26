@@ -145,4 +145,4 @@ Rediseño de botones con estados de interacción distintivos:
 - Vanilla JavaScript
 
 ## 🧭 Enlace de la web en Producción
-[Enlace a la Web](https://erdekas.github.io/Blog-Hello-Kitty.github.io/ "Blog de Hello Kitty")
+[Enlace a la Web](https://blog-hello-kitty-github-io.vercel.app/ "Blog de Hello Kitty")
